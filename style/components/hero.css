@@ -1,0 +1,131 @@
+
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.hero__subtitle{
+    animation-name: opacity;
+    animation-duration: 2s;
+
+    font-size: var(--size-sm);
+    color: var(--clr-gray);
+    line-height: 0.9;
+    font-family: 'Gambetta', serif;
+}
+
+
+.hero__title{
+    animation-name: opacity;
+    animation-duration: 2s;
+
+    color: var(--clr-gray);
+    text-transform: uppercase;
+    /* font-family: 'UnifrakturMaguntia', cursive; */
+    font-size: var(--size-4xl);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+}
+
+.hero__description{
+    animation-name: opacity;
+    animation-duration: 2s;
+
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-red);
+}
+
+.hero__btn{
+    animation-name: opacity;
+    animation-duration: 2s;
+
+    text-transform: capitalize;
+    font-size: var(--size-sm);
+    font-family: 'Gambetta', serif;
+}
+
+@media (min-width: 475px) {
+    .hero {
+        gap: 1.5rem;
+    }
+    
+    .hero__subtitle{
+        font-size: var(--size-sm);
+    }
+    
+    .hero__title{
+        font-size: var(--size-5xl);
+    }
+    
+    .hero__description{
+        font-size: var(--size-base);
+    }
+    
+    .hero__btn{
+        font-size: var(--size-base);
+    }
+}
+
+/*sm*/
+/* @media (min-width: 640px) {
+
+} */
+
+/*md*/
+/* @media (min-width: 768px) {
+
+} */
+
+/*lg*/
+@media (min-width: 1024px) {
+    .hero__subtitle{
+        font-size: var(--size-sm);
+    }
+    
+    .hero__title{
+        font-size: var(--size-7xl);
+    }
+    
+    .hero__description{
+        font-size: var(--size-lg);
+    }
+    
+    .hero__btn{
+        font-size: var(--size-lg);
+    }
+}
+
+
+/*xl*/
+@media (min-width: 1280px) {
+    .hero{
+        gap: 2rem;
+    }
+
+    .hero__subtitle{
+        font-size: var(--size-base);
+    }
+    
+    .hero__title{
+        font-size: var(--size-10xl);
+    }
+    
+    .hero__description{
+        font-size: var(--size-sm);
+    }
+    
+    .hero__btn{
+        font-size: var(--size-xl);
+    }
+}
+
+/*2xl*/
+/* @media (min-width: 1536px) {
+
+} */

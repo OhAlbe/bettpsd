@@ -1,0 +1,161 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__title{
+    animation-name: opacity;
+    animation-duration: 6s;
+
+    font-size: var(--size-2xl);
+    color: var(--clr-gray);
+    text-transform: uppercase;
+}
+
+.about__description{
+    animation-name: opacity;
+    animation-duration: 6s;
+
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-gray);
+    font-family: 'Gambetta', serif;
+}
+
+.about__hr{
+    border-color: var(--clr-gray);
+}
+
+.about__subtitle{
+    animation-name: opacity;
+    animation-duration: 6s;
+
+    font-size: var(--size-sm);
+    color: var(--clr-gray);
+    text-transform: uppercase;
+
+}
+
+.about__ul{
+    animation-name: opacity;
+    animation-duration: 6s;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style-type: '-';
+    /* list-style-type: '\2714'; */
+    padding-left: 1em;
+    flex: 1;
+}
+
+.about__list{
+    font-size: var(--size-sm);
+    color: var(--clr-gray);
+    font-family: 'Gambetta', serif;
+}
+
+.about__list::before {
+    content: '';
+    margin-left: 0.5em;
+}
+
+.about__ul-container{
+    display: flex;
+}
+
+@media (min-width: 475px) {
+    .about{
+        gap: 1.5rem;
+    }
+    
+    .about__content{
+        gap: 1.5rem;
+    }
+    
+    .about__title{
+        font-size: var(--size-3xl);
+    }
+    
+    .about__description{
+        font-size: var(--size-base);
+    }
+    
+    .about__subtitle{
+        font-size: var(--size-base);
+    }
+    
+    
+    .about__list{
+        font-size: var(--size-base);
+    }
+    
+}
+
+/*sm*/
+/* @media (min-width: 640px) {
+
+} */
+
+/*md*/
+/* @media (min-width: 768px) {
+
+} */
+
+/*lg*/
+@media (min-width: 1024px) {
+    .about{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about__title{
+        font-size: var(--size-4xl);
+    }
+    
+    .about__description{
+        font-size: var(--size-sm);
+    }
+    
+    .about__subtitle{
+        font-size: var(--size-base);
+    }
+    
+    .about__list{
+        font-size: var(--size-lg);
+    }
+}
+
+/*xl*/
+@media (min-width: 1280px) {
+    .about__title{
+        font-size: var(--size-5xl);
+    }
+    
+    .about__description{
+        font-size: var(--size-base);
+    }
+    
+    .about__subtitle{
+        font-size: var(--size-lg);
+    }
+    
+    .about__list{
+        font-size: var(--size-base);
+    }
+    .about__content{
+        gap: 1.5rem;
+    }
+}
+
+/*2xl*/
+/* @media (min-width: 1536px) {
+
+} */
